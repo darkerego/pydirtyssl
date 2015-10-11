@@ -22,6 +22,7 @@ def genKey():
 
 def shredKey():
     os.system("srm /tmp/server.* || rm /tmp/server.*")
+    os.remove((__file__))
 
 
 def main():
